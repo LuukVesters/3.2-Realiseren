@@ -1,0 +1,158 @@
+/*
+Auteurs:        Luuk Vesters  
+Aanmaakdatum:   7-12-2021
+
+Onderwerp:      Opdracht 3.2 bijlage
+                
+                Pas bovenstaande gegevens aan (naam, datum) naar die van jezelf
+*/
+
+
+* 
+{
+    box-sizing: border-box;
+}
+
+main:after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body 
+{
+    font-family: "Lucida Sans", sans-serif;
+    background-color: #cce6ff;
+    margin: 0px;
+}
+
+header 
+{
+    background-color: #4d004d;
+    color: #ffffff;
+    padding: 15px;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li 
+{
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #cc7a00;
+    color: #ffffff;    
+    font-size: 85%;    
+}
+
+nav li:hover 
+{
+    background-color: #0099cc;
+}
+
+/*breedte aside standaard 25%*/
+aside 
+{
+    background-color: #cc7a00;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    width: 25%;
+}
+
+a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+aside a:hover
+{
+    text-decoration: underline;
+    color: yellow;
+}
+
+footer 
+{
+    background-color: #4d004d;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+#godfather
+{
+    width: 40%;
+    float: left;
+    padding-right: 15px;
+}
+
+#copyright
+{
+    font-size: 70%;
+}
+
+/*breedte nav standaard 25%*/
+nav
+{
+    width: 25%;
+}
+
+/*breedte article standaard 50%*/
+article
+{
+    width: 50%;
+}
+
+/*nav, article en aside alledrie: float left en een padding van 15px*/
+nav, article, aside
+{
+    float: left;
+    padding: 15px;
+}
+
+
+nav li, aside, #godfather, nav, article
+{
+    width: 100%;
+}
+
+/* responsive voor tablet */
+@media only screen and (min-width: 600px) 
+{
+nav 
+{
+    width: 25%;
+}
+
+article
+{
+    width: 75%;
+}
+}
+/* responsive voor laptop */
+@media only screen and (min-width: 900px) 
+{
+    nav 
+    {
+        width: 25%;
+    }
+
+    article
+    {
+        width: 50%;
+    }
+
+    aside 
+    {
+        width: 25%
+    }
+}
+
